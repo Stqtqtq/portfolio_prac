@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "date": "Apr 2012 - May 2015",
+        "title": "Student",
+        "organization": "Singapore Polytechnic",
+        "description": "Diploma in Business Information Technology" 
+    },
+    {
+        "id": 2,
+        "date": "Mar 2014 - Oct 2014",
+        "title": "Business Consultant (Intern/Part-time)",
+        "organization": "APTSTAR Consultancy Pte Ltd",
+        "description": "Provided business operation solutions for SMEs" 
+    },
+    {
+        "id": 3,
+        "date": "Nov 2015 - Oct 2017",
+        "title": "Cyber Defence Operator (National Service)",
+        "organization": "MINDEF/SAF",
+        "description": "Pioneer batch for upcoming Cyber Defence Group. Monitored SAF networks against potential cyber threats" 
+    },
+    {
+        "id": 4,
+        "date": "Feb 2018 - Apr 2018",
+        "title": "Customer Service Officer",
+        "organization": "City Development Limited",
+        "description": "Facilitated in the process of unit handover to new household owners" 
+    },
+    {
+        "id": 5,
+        "date": "Aug 2019 - May 2023",
+        "title": "Undergraduate",
+        "organization": "Nanyang Technological University (NTU)",
+        "description": "Bachelor of Engineering (Computer Science), Honours with an elective focus in A.I, Data Science and Analytics" 
+    },
+    {
+        "id": 6,
+        "date": "Jan 2022 - July 2022",
+        "title": "Full Stack Developer (Intern)",
+        "organization": "EVONIK (SEA) Private Limited",
+        "description": "Developed web application for CRUD management of research data" 
+    },
+    {
+        "id": 7,
+        "date": "May 2023 - Present",
+        "title": "Job Hunter",
+        "organization": "Nil",
+        "description": "Mainly in the midst of job hunting. Developing personal projects on the side." 
+    }
+]

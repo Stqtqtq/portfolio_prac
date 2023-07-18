@@ -1,34 +1,73 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.scss'
+import Navbar from './components/Navbar'
+import Typewriter from './components/Typewriter'
+import Timeline from './components/Timeline'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import stars from './assets/stars.jpg'
+import landscape from './assets/landscape.jpg'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="container">
+      <Navbar />
+      <Parallax pages={3}>
+        {/* <ParallaxLayer speed={1}>
+            <h2>Welcome to my website</h2>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={1} speed={0.5}>
+            <h2>Web development is fun!</h2>
+        </ParallaxLayer> */}
+        <ParallaxLayer
+          className="stars"
+          offset={0}
+          speed={1}
+          factor={2}
+          // style={{
+          //   backgroundImage: `url(${stars})`,
+          //   backgroundSize: 'cover',
+          // }}
+        >
+          <Typewriter />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          className="landscape"
+          offset={1}
+          speed={1}
+          factor={3}
+          // style={{
+          //   backgroundImage: `url(${landscape})`,
+          //   backgroundSize: 'cover',
+          // }}
+        >
+          <Timeline />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          sticky={{ start: 0.9, end: 2.5 }}
+          style={{ textAlign: 'center' }}
+        >
+          {/* <img src={cat} /> */}
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={0.2}
+          speed={0.05}
+          // onClick={() => ref.current.scrollTo(3)}
+        >
+          <h2>Welcome to my website</h2>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={3}
+          speed={2}
+          // onClick={() => ref.current.scrollTo(0)}
+        >
+          <h2>Hi Mom!</h2>
+        </ParallaxLayer>
+      </Parallax>
+    </div>
   )
 }
 
